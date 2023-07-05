@@ -10,7 +10,9 @@ In recent decades, Portugal has made significant strides in improving the ed- uc
 
 We merged the training and test datasets in order to examine their character- istics and for subsequent performance analysis. The resulting dataset contains 395 rows and 33 columns or features, with the G3 column representing the final grade attained by each student. The features were divided into 17 categorical and 16 numeric variables, with the categorical features modeled as factors to facilitate manipulation. We conducted exploratory data analysis on each vari- able, and Figure 1 presents the bar charts and histograms for each feature. It is worth noting that the target variable G3 exhibits a high number of outliers, which make up 9.6% of the dataset.
 
-* Image 1: Bar charts and histograms for each feature in the merged dataset, and the G3 column represents the final grade obtained by each student. The charts provide a visual representation of the distribution of each variable, highlighting the presence of outliers in the target variable G3.
+![Bar charts and histograms for each feature in the merged dataset, and the G3 column represents the final grade obtained by each student. The charts provide a visual representation of the distribution of each variable, highlighting the presence of outliers in the target variable G3](images/Student_Grade_Distributions.png)
+|:--:|
+| <b>Figure 1:</b> Bar charts and histograms for each feature in the merged dataset, and the G3 column represents the final grade obtained by each student. The charts provide a visual representation of the distribution of each variable, highlighting the presence of outliers in the target variable G3|
 
 Next, we examined the number of outliers in other variables by analyzing boxplots for only the numerical valued variables. We present the boxplots in Figure 2, which show that we obtained 41 datapoints of interest, corresponding to 10.38% of our data. Because the relatively small size of our dataset, we chose not to drop the outliers as they may contain useful information.
 
