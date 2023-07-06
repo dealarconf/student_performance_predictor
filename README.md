@@ -1,7 +1,9 @@
 # Student Performance Predictor
 
+### Abstract
 This work explores the performance of different machine learning models in predicting the final grade (`G3`) of high school students based on a dataset of student performance in different courses and demographic variables. We first explore the correlations between variables, and find that almost all variables correlated with `G2` are also similarly correlated with `G3`. We then use a probabilistic graphical model and a Bayesian sampler to impute missing data values more accurately. We initially treat the problem as a regression problem but then realize that classification may be a more suitable approach. We evaluate different models using a $10$ folds stratified cross-validation, and find that, among the classic machine learning models an SVM model with PCA-transformed data and a carefully tuned hyperparameters achieves the best performance, with an F1-score of $46.95\%$. We also compare this model to baseline classifiers and show its superiority. Finally, we demonstrate the importance of the `G2` variable in predicting `G3`, but note that other variables are important in cases of low `G2`. Our work highlights the potential of machine learning models while also simpler heuristic of predictions are suitable under certain circumstances.
 
+### Repository description
 The code with the analysis is in the `grades_analysis.ipynb` file. The datasets are uploaded in `student-matTest.data` and `student-matTrain.data`. The `images` folder contains the images embedded in this `README` file
 
 ## Introduction
